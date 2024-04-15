@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Iniciar Sesión</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Quicksand:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="fijo.css">
+    <link rel="stylesheet" href="main.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            font-family: 'Quicksand', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        header {
+            width: 100%;
+            background-color: #104188;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 450px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .error {
+            color: red;
+        }
+
+        .text {
+            color: #104188;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="login.html" class="Logo">
+            <img src="/images/LogoD.jpg" alt="Logo EPM" class="EPM" class="logo-img" width="100px">
+            <button class="Icon" data-text="Awesome">
+                <span class="actual-text" href="main.html">&nbsp;Regresar&nbsp;</span>
+                <span aria-hidden="true" class="hover-text">&nbsp;Regresar&nbsp;</span>
+            </button>
+        </a>
+        <nav>
+            <a href="" class="nav-link">Ayuda</a>
+        </nav>
+    </header>
+    <br>
+    <br>
+    <div class="container">
+        <h2 class="text">Iniciar Sesión</h2>
+        <form method="post" id="sinfupForm">
+            <div class="form-group">
+                <label for="usuario" class="text">Usuario:</label>
+                <input type="text" name="nombre_usuario" required style="width: 90%;" class="barra">
+            </div>
+            <div class="form-group">
+                <label for="email" class="text">Correo:</label>
+                <input type="email" id="email" name="email" required style="width: 90%;" class="barra">
+            </div>
+            <div class="form-group">
+                <label for="password" class="text">Contraseña:</label>
+                <input type="password" id="password" name="password" required style="width: 90%;" class="barra">
+            </div>
+            <div class="form-group">
+                <label for="password" class="text">Confirmacion de contraseña:</label>
+                <input type="password" id="password" name="password" required style="width: 90%;" class="barra">
+            </div>
+            <br>
+            <label><input type="checkbox"> <a onclick="mostrarVentana1()" class="nav-link"
+                    style="color: #25bbf0;">Terminos y Condiciones</a>
+                <div id="ventanaEmergente1" class="ventana1">
+                    <div class="contenido1">
+                        <span class="cerrar1" onclick="cerrarVentana1()">&times;</span>
+                        <h2>Terminos y Condiciones</h2>
+                        <p>¡Bienvenido/a a nuestra aplicación web de Inventario para EvoParkMaster. Antes de utilizar
+                            nuestra
+                            plataforma, te pedimos que leas y aceptes los siguientes términos y condiciones de uso. Al
+                            acceder y
+                            utilizar nuestra aplicación web, aceptas cumplir con estos términos y condiciones en su
+                            totalidad. Si no
+                            estás de acuerdo con alguno de estos términos, te recomendamos que no utilices nuestra
+                            aplicación.</h3>
+                        <h3>Uso de la Web</h3>
+                        <p>a. Nuestra aplicación informativa EvoParkMaster está diseñada para permitir a los usuarios
+                            visualizar los
+                            datos relacinados en la optimizacion de espacio de uso automobilistico. El sistema se
+                            proporciona como una
+                            herramienta en línea para facilitar el seguimiento de espacios de uso publico. Toda la
+                            información y
+                            contenido disponible a través de Inventario se proporciona únicamente con fines informativos
+                            y no constituye
+                            asesoramiento comercial, financiero o profesional de ningún tipo. El uso de la plataforma
+                            implica que
+                            aceptas utilizarlo bajo tu propiaresponsabilidad y discreción.</p>
+                        <p>b. Te comprometes a utilizar la aplicación web únicamente para los fines previstos y de
+                            acuerdo con todas
+                            las leyes y regulaciones aplicables. Al crear una cuenta y utilizar inventario, eres
+                            responsable de mantener
+                            la confidencialidad de tu información de inicio de sesión y de todas las actividades que
+                            ocurran bajo tu
+                            cuenta. Te comprometes a utilizar inventario de manera legal y ética, respetando todas las
+                            leyes y
+                            regulaciones aplicables.</p>
+                        <h3>Registro de Usuario</h3>
+                        <p>a. Para acceder a nuestra aplicación web, es posible que debas registrarte y crear una cuenta
+                            de usuario.
+                            Todos los derechos de propiedad intelectual, incluyendo derechos de autor, marcas
+                            comerciales, nombres
+                            comerciales y logotipos relacionados con el sistema y su contenido, son de informacion y
+                            visualizacion
+                            relacionados a la aumatizacion de un parking,
+                            propiedad exclusiva de la empresa o sus licenciantes. Estos derechos protegen el software,
+                            diseño,
+                            interfaces de usuario, bases de datos y cualquier otro
+                            elemento relacionado</p>
+                        <p> b. Al registrarte, aceptas proporcionar información precisa y actualizada. Eres responsable
+                            de mantener la
+                            confidencialidad de tu cuenta y contraseña, y aceptas ser responsable de todas las
+                            actividades que ocurran
+                            bajo tu cuenta. No se permite la reproducción, distribución, modificación o explotación del
+                            contenido del
+                            sistema de inventario sin previo consentimiento por escrito de la empresa. Está prohibido el
+                            uso no
+                            autorizado de marcas comerciales, logotipos o cualquier otro elemento protegido por derechos
+                            de propiedad
+                            intelectual asociado a la empresa.</p>
+                        </p>
+                    </div>
+                </div>
+            </label>
+            <br>
+            <label>
+                <input type="checkbox"> <a onclick="mostrarVentana2()" class="nav-link"
+                    style="color: #25bbf0;">Politicas de Privacidad</a>
+                <div id="ventanaEmergente2" class="ventana2">
+                    <div class="contenido2">
+                        <span class="cerrar2" onclick="cerrarVentana2()">&times;</span>
+                        <h2>Politicas de Privacidad</h2>
+          <p>Última actualización: 10  de Abril del año en curso.</p>
+          <p>Gracias por utilizar nuestro sistema de monitoreo para estacionamiento. En EvoParkMaster, nos comprometemos a proteger la privacidad de nuestros usuarios y a garantizar el uso seguro y responsable de la información personal proporcionada a través de nuestro sitio web.</p>
+          <p>Esta política de privacidad describe cómo recopilamos, utilizamos, protegemos y compartimos la información personal de los usuarios que interactúan con nuestro sistema de monitoreo para estacionamiento. Al acceder y utilizar nuestro sitio web, usted acepta los términos y condiciones descritos en esta política de privacidad.</p>
+          <h3>Recopilación de Información.</h3>
+          <p>Recopilamos información personal de los usuarios de varias maneras, incluyendo, pero no limitado a:</p>
+          <p>Información de uso: Recopilamos información sobre cómo los usuarios interactúan con nuestro sitio web, incluyendo páginas visitadas, tiempo de permanencia en el sitio, clics y otra información de navegación.</p>
+          <h3>Uso de la Información.</h3>
+          <p>Proporcionar y mejorar nuestros servicios.</p>
+          <p>Personalizar la experiencia del usuario y ofrecer contenido relevante.</p>
+          <h3>Compartir de la Información.</h3>
+          <p>No compartimos, vendemos ni alquilamos información personal de nuestros usuarios con terceros, excepto cuando sea necesario para cumplir con fines comerciales legítimos, para proporcionar servicios solicitados por el usuario o cuando lo exija la ley.</p>
+          <h3>Enlaces a Terceros.</h3>
+          <p>Nuestro sitio web puede contener enlaces a sitios web de terceros que no están controlados ni operados por nosotros. No somos responsables de las prácticas de privacidad de estos sitios web y al hacer clic en estos enlaces, usted acepta que la política de privacidad de esos sitios web puede diferir de la nuestra.</p>
+          <p>Al utilizar nuestro sistema de monitoreo para estacionamiento, usted acepta los términos y condiciones de esta política de privacidad.
+          <p>Gracias por confiar en nosotros.</p>
+          <p>EvoParkMaster</p>
+                    </div>
+                </div>
+            </label>
+            <script src="info.js"></script>
+            <br>
+            <br>
+            <button class="btn" type="submit">
+                <strong>Iniciar Sesión</strong>
+                <div id="container-stars">
+                    <div id="stars"></div>
+                </div>
+                <div id="glow">
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                </div>
+            </button>
+        </form>
+    </div>
+    <br>
+    <br>
+</body>
+
+</html>

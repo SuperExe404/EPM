@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Iniciar Sesión</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Quicksand:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="fijo.css">
+    <link rel="stylesheet" href="main.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            font-family: 'Quicksand', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        header {
+            width: 100%;
+            background-color: #104188;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 450px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .error {
+            color: red;
+        }
+
+        .text {
+            color: #104188;
+        }
+
+        h2 {
+            color: #104188;
+        }
+
+        .container label {
+            display: block;
+            clear: both;
+        }
+
+        .container input[type="checkbox"] {
+            float: left;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="main.html" class="Logo">
+            <img src="/images/LogoD.jpg" alt="Logo EPM" class="EPM" class="logo-img" width="100px">
+            <button class="Icon" data-text="Awesome">
+                <span class="actual-text">&nbsp;Regresar&nbsp;</span>
+                <span aria-hidden="true" class="hover-text">&nbsp;Regresar&nbsp;</span>
+            </button>
+        </a>
+        <nav>
+            <a href="singup.html" class="nav-link">Registarte</a>
+            <a href="" class="nav-link">Ayuda</a>
+        </nav>
+    </header>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="container">
+        <h2 class="text">Iniciar Sesión</h2>
+        <form method="post" action="{{ url_for('login') }}">
+            <div class="form-group">
+                <label for="nombre_usuario" class="text">Usuario:</label>
+                <input type="text" name="nombre_usuario" required style="width: 90%;">
+            </div>
+            <div class="form-group">
+                <label for="contraseña" class="text">Contraseña:</label>
+                <input type="password" name="contraseña" required style="width: 90%">
+            </div>
+            <br>
+            <button class="btn" type="submit">
+                <strong>Registarte</strong>
+                <div id="container-stars">
+                    <div id="stars"></div>
+                </div>
+                <div id="glow">
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                </div>
+            </button>
+        </form>
+        <script src="pruebas.js"></script>
+    </div>
+</body>
+
+</html>

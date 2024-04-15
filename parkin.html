@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tarjetas</title>
+  <link rel="stylesheet" href="fijo.css">
+  <link rel="stylesheet" href="parkin.html">
+  <link rel="stylesheet" href="main.css">
+  <style>
+    body {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    .card {
+      position: relative;
+      width: calc(20% - 20px);
+      margin-bottom: 20px; 
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      top: -5%;
+      margin-top: 30px;
+    }
+    .card img {
+      width: 100%;
+      height: auto;
+    }
+    .card-title {
+      font-size: 18px;
+      font-weight: bold;
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="#" class="Logo">
+      <img src="/images/LogoD.jpg" alt="Logo EPM" class="EPM" class="logo-img" width="100px">
+      <button class="Icon" data-text="Awesome">
+        <span class="actual-text">&nbsp;EvoParkMaster&nbsp;</span>
+        <span aria-hidden="true" class="hover-text">&nbsp;EvoParkMaster&nbsp;</span>
+      </button>
+    </a>
+    <nav>
+      <a href="/main.html" class="nav-link">Salir</a>
+      <a onclick="mostrarVentana2()" class="nav-link" style="color: aliceblue;">Ayuda</a>
+      <div id="ventanaEmergente2" class="ventana2">
+        <div class="contenido2">
+          <span class="cerrar2" onclick="cerrarVentana2()">&times;</span>
+          <h2>Ayuda</h2>
+          <p>¡Proximamente manual de Usuario!</p>
+          <p>Comentarios al +52 241 220 1986</p>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="card">
+    <img src="/images/estacionamiento.png" alt="Imagen de ejemplo">
+    <h2 class="card-title">Título de la tarjeta 1</h2>
+  </div>
+  <div class="card">
+    <img src="/images/estacionamiento.png" alt="Imagen de ejemplo">
+    <h2 class="card-title">Título de la tarjeta 2</h2>
+  </div>
+  <div class="card">
+    <img src="/images/estacionamiento.png" alt="Imagen de ejemplo">
+    <h2 class="card-title">Título de la tarjeta 3</h2>
+  </div>
+  <div class="card">
+    <img src="/images/estacionamiento.png" alt="Imagen de ejemplo">
+    <h2 class="card-title">Título de la tarjeta 4</h2>
+  </div>
+  <div class="card">
+    <img src="/images/estacionamiento.png" alt="Imagen de ejemplo">
+    <h2 class="card-title">Título de la tarjeta 5</h2>
+  </div>
+  <div class="card">
+    <img src="/images/estacionamiento.png" alt="Imagen de ejemplo">
+    <h2 class="card-title">Título de la tarjeta 6</h2>
+  </div>
+  <div class="card">
+    <img src="/images/estacionamiento.png" alt="Imagen de ejemplo">
+    <h2 class="card-title">Título de la tarjeta 7</h2>
+  </div>
+  <div class="card">
+    <img src="/images/estacionamiento.png" alt="Imagen de ejemplo">
+    <h2 class="card-title">Título de la tarjeta 8</h2>
+  </div>
+  <div class="card">
+    <img src="/images/estacionamiento.png" alt="Imagen de ejemplo">
+    <h2 class="card-title">Título de la tarjeta 9</h2>
+  </div>
+  <div class="card">
+    <img src="/images/estacionamiento.png" alt="Imagen de ejemplo">
+    <h2 class="card-title">Título de la tarjeta 10</h2>
+  </div>
+  <script src="info.js"></script>
+</body>
+</html>
