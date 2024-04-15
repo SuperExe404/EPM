@@ -13,12 +13,37 @@ function mostrarVentana2() {
   function cerrarVentana2() {
     document.getElementById('ventanaEmergente2').style.display = 'none';
   }
+  
   function mostrarVentana3() {
     document.getElementById('ventanaEmergente3').style.display = 'block';
   }
   
   function cerrarVentana3() {
     document.getElementById('ventanaEmergente3').style.display = 'none';
+  }
+
+  function mostrarVentana4() {
+    document.getElementById('ventanaEmergente4').style.display = 'block';
+  }
+  
+  function cerrarVentana4() {
+    document.getElementById('ventanaEmergente4').style.display = 'none';
+  }
+
+  function mostrarVentana5() {
+    document.getElementById('ventanaEmergente5').style.display = 'block';
+  }
+  
+  function cerrarVentana5() {
+    document.getElementById('ventanaEmergente5').style.display = 'none';
+  }
+
+  function mostrarVentana6() {
+    document.getElementById('ventanaEmergente6').style.display = 'block';
+  }
+  
+  function cerrarVentana6() {
+    document.getElementById('ventanaEmergente6').style.display = 'none';
   }
   
   function acerca() {
@@ -48,3 +73,14 @@ function mostrarVentana2() {
       card.querySelector('.card-content').style.transform = 'rotateX(0deg) rotateY(0deg) scale(1)';
     });
   });
+
+  function checkCheckboxes() {
+    var checkbox1 = document.getElementById("checkbox1");
+    var checkbox2 = document.getElementById("checkbox2");
+
+    if (!checkbox1.checked || !checkbox2.checked) {
+      alert("Por favor, acepta todos los términos y condiciones.");
+    } else {
+      window.location.href = "https://drive.google.com/drive/folders/1IFRkFTrlBSW-V8qYcAeQHct3J0k4uA5c?usp=sharing";
+    }
+  }
